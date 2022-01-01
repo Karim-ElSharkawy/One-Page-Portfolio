@@ -46,3 +46,37 @@ canvas {
   width: 200px;
   height: 50px;
 }
+
+@media only screen and (max-width: 860px)  {
+  #hero-text {
+    width: 450px;
+    height: 150px;
+  }
+
+  #hero-text p{
+    font-size: 24px;
+  }
+
+  #hero-text #show-works-button {
+    font-size: 16px;
+    width: 220px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 544px)  {
+  #hero-text {
+    width: 75%;
+    height: 150px;
+  }
+
+  #hero-text p{
+    font-size: 1.8vh;
+  }
+
+  #hero-text #show-works-button {
+    font-size: 1.2vh;
+    width: 50%;
+    height: 50px;
+  }
+}

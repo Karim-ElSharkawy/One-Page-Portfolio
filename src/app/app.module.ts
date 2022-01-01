@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
+import { TopStickyNavigationComponent } from './top-sticky-navigation/top-sticky-navigation.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeroSectionComponent
+    HeroSectionComponent,
+    TopStickyNavigationComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,48 @@
+#hero-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+}
+canvas {
+  display: block;
+}
+
+#hero-text {
+  padding: 30px;
+  width: 782px;
+  height: 220px;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero-text #my-name{
+  font-family: RalewayBold, WorkSans, sans-serif;
+  color: #f75b04;
+}
+
+#hero-text p{
+  font-size: 42px;
+  font-family: Raleway, WorkSans, sans-serif;
+  color: black;
+  margin: 0;
+}
+
+#hero-text #show-works-button {
+  cursor: pointer;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, 25%);
+  border: 4px solid #f75b04;
+  background-color: transparent;
+  font-family: Raleway, WorkSans, sans-serif;
+  font-weight: 600;
+  width: 200px;
+  height: 50px;
+}

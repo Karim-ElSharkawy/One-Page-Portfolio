@@ -1,0 +1,6 @@
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+  <div class="section">
+    <app-hero-section (buttonClickEvent)="fullpage_api.moveSectionDown()"></app-hero-section>
+  </div>
+  <div class="section">Some section2</div>
+</div>

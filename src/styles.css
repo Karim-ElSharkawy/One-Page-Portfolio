@@ -1,0 +1,122 @@
+@import '~fullpage.js/dist/fullpage.min.css';
+:root {
+  --first-color: #303848;
+  --second-color: #BF9268;
+  --third-color: #F2F2F2;
+  --fourth-color: #fff;
+
+  /*
+    --first-color: #2b697a;
+  --second-color: #c8d8e4;
+  --third-color: #fff;
+  --fourth-color: #f2f2f2;
+  --fifth-color: #52ab98;
+  --sixth-color: #bcccd8;
+  --seventh-color: #ddc1ab;
+  */
+
+  --first-color-rgb: 43, 103, 119;
+  --second-color-rgb: 200, 216, 228;
+  --third-color-rgb: 255, 255, 255;
+  --fourth-color-rgb: 242, 242, 242;
+  --fifth-color-rgb: 82, 171, 152;
+}
+
+/* Fonts */
+@font-face {
+  font-family: WorkSans;
+  src: url("/assets/fonts/WorkSans/WorkSans-VariableFont_wght.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: AleoRegular;
+  src: url("/assets/fonts/Aleo/Aleo-Regular.ttf");
+}
+
+@font-face {
+  font-family: PTSansBoldItalic;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'),
+  url('assets/fonts/PTSans/PTSans-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: PTSansBold;
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+  url('assets/fonts/PTSans/PTSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: PTSansItalic;
+  src: local('PT Sans Italic'), local('PTSans-Italic'),
+  url('assets/fonts/PTSans/PTSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: PTSansRegular;
+  src: local('PT Sans'), local('PTSans-Regular'),
+  url('assets/fonts/PTSans/PTSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: local('Raleway'), local('Raleway'),
+  url('assets/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: RalewayBold;
+  src: local('RalewayBold'), local('RalewayBold'),
+  url('assets/fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+body {
+  background-color: var(--third-color);
+  font-family: Raleway, WorkSans, sans-serif;
+  color: var(--first-color);
+  margin: 0;
+}
+
+.mainDiv {
+  width: calc(100% - 100px);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.first-color {
+  color: var(--first-color);
+}
+
+.second-color {
+  color: var(--second-color);
+}
+
+.third-color {
+  color: var(--third-color);
+}
+
+.first-color-background {
+  background-color: var(--first-color);
+}
+
+.second-color-background {
+  background-color: var(--second-color);
+}
+
+.third-color-background {
+  background-color: var(--third-color);
+}

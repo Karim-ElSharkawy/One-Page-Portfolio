@@ -12,11 +12,15 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 8.15.1
-    - name: Build and Deploy
+    - name: Install Packages
+      run: npm install
+    - name: Build Project
+      run: ng build
+    - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v2
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: dist/One-Page-Portfolio
-        BUILD_SCRIPT: npm install && ng build && ng deploy --base-href=/One-Page-Portfolio/
+        BUILD_SCRIPT: ng deploy --base-href=/One-Page-Portfolio/

@@ -41,4 +41,4 @@ jobs:
           # branch on which the angular build will be deployed
           deploy_branch: master # optional, default is gh-pages
           # The folder in which `ng build` provides its output. This is the folder which will be deployed to the `deploy_branch`.
-          angular_dist_build_folder: dist # optional, default is dist
+          angular_dist_build_folder: dist/One-Page-Portfolio # optional, default is dist

@@ -21,4 +21,4 @@ jobs:
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: dist/One-Page-Portfolio
-        BUILD_SCRIPT: npm run ng -- build && npm run ng -- deploy --base-href=/One-Page-Portfolio/
+        BUILD_SCRIPT: npm run ng -- build --prod && npm run ng -- deploy --base-href=/One-Page-Portfolio/

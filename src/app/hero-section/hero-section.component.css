@@ -1,7 +1,7 @@
 #hero-section {
   width: 100vw;
   height: 100vh;
-  background-color: red;
+  background-color: var(--first-color);
 }
 canvas {
   display: block;

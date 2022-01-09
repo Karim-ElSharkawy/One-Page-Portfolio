@@ -1,8 +1,21 @@
-<nav id="navbar">
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Blog</a>
-  <a href="#">Portefolio</a>
-  <a href="#">Contact</a>
-  <div class="animation start-home"></div>
-</nav>
+<div class="nav mainDiv" id="navbar">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      {{title? title : "Karim Elsharkawy"}}
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <div class="nav-links">
+    <a (click)="lowerNavbar()" href="#Experience">Experience</a>
+    <a (click)="lowerNavbar()" href="#Projects">Projects</a>
+    <a (click)="lowerNavbar()" href="#Skills">Skills</a>
+  </div>
+</div>

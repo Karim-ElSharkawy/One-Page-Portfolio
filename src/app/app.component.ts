@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,13 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'One-Page-Portfolio';
-
+  title;
   config: any;
+  showNavbar: boolean = false;
   fullpage_api: any;
 
   constructor() {
-
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
     this.config = {
 
       // fullpage options
@@ -21,11 +24,9 @@ export class AppComponent {
       menu: '#menu',
 
       // fullpage callbacks
-      afterResize: () => {
-        console.log("After resize");
-      },
       afterLoad: (origin, destination, direction) => {
-        console.log(origin.index);
+        this.showNavbar = !destination.anchor.includes('Welcome');
+        this.title = destination.anchor;
       }
     };
   }

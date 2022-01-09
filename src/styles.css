@@ -1,7 +1,7 @@
 @import '~fullpage.js/dist/fullpage.min.css';
 :root {
   --first-color: #f75b04;
-  --second-color: #BF9268;
+  --second-color: #2C2C2C;
   --third-color: #F2F2F2;
   --fourth-color: #fff;
 
@@ -16,7 +16,7 @@
   */
 
   --first-color-rgb: 43, 103, 119;
-  --second-color-rgb: 200, 216, 228;
+  --second-color-rgb: 32, 32, 48;
   --third-color-rgb: 255, 255, 255;
   --fourth-color-rgb: 242, 242, 242;
   --fifth-color-rgb: 82, 171, 152;
